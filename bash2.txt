@@ -1,0 +1,42 @@
+Задача 2
+  1. Предварительно создайте файл bash2.txt, в который вы будете добавлять выполненные команды.
+  2. Зайти в домашнюю директорию через терминал.
+  3. Создать папку test 3
+  4. Добавить в папку test 3 три файла 4, 5 и 6, в каждом из которых должно быть по 4 строки row1, row2, row3, row4
+  5. Найдите строку row2 в файле 5
+  6. Найдите строку row в папке test3
+  7. Посчитайте сколько строк с содержимым row в файле 6
+  8. Найдите файл 5 внутри папки test3
+  9. Используя команду find, удалите файл 5
+  10. Используя команду echo, добавьте слово test в файл 4
+  11. Замените слово test в файле 4 на fail
+  12. Добавьте в файл 4 слово test так, чтобы сохранилось содержимое
+  13. Просмотрите все процессы для юзеров не только в консоли, которые происходят в системе
+  14. Убейте процесс 666 в консоли
+  15. Узнайте доступность ресурса rusau.net, используя ping
+  16. Отправьте 5 пакетов на сайт rusau.net
+  17. Используя GET и команду curl, получите информацию о зарегистрированных питомцах с любым статусом на https://petstore.swagger.io/
+  18. Используя POST и команду curl, создайте нового пользователя на https://petstore.swagger.io/
+
+
+Решение задачи 2:
+  1. touch  bash2.txt
+  2. cd
+  3. mkdir test3
+  4. touch test3/4.txt test3/5.txt test3/6.txt
+echo -e "row1\nrow2\nrow3\nrow4"| tee test3/4.txt test3/5.txt test3/6.txt
+  5. grep "row2" test3/5.txt
+  6. cd test3
+grep "row" *.txt
+  7. grep -c "row" 6.txt
+  8. find -name "5.txt"
+  9. find -name "5.txt" -exec rm {} \;
+  10. echo "test" >> 4.txt
+  11. sed -i 's/test/fail/g' test3/file4.txt
+  12. echo "test" >> 4.txt
+  13. ps aux
+  14. kill 666
+  15. ping rusau.net
+  16. ping -c 5 rusau.net
+  17. curl https://petstore.swagger.io/v2/pet/findByStatus?status=available
+  18. curl -H "Content-Type: application/json" -d '{"id": 1033,"username": "ksu", "firstName": "Merry", "lastName": "Devis", "email": "merry@example.com", "password": "123ksenia123", "phone": "45698934"}' https://petstore.swagger.io/v2/user
