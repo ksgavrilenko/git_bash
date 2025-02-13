@@ -1,0 +1,11 @@
+git init ksgavrilenko                                       Создание своего репозитория с таким же именем, как и имя пользователя в GitHub
+git clone git@github.com:ksgavrilenko/ksgavrilenko.git      Клонирование репозитория на свой компьютер в отдельную папку
+git clone git@github.com:testrusau/testrusau.git            Клонирование репозитория https://github.com/testrusau/testrusau на свой компьютер в отдельную папку
+cd testrusau                                                Перемещение из documents в директорию testrusau 
+cp -r testrusau ksgavrilenko                                Копирование содержимого из testrusau в ksgavrilenko 
+git add .                                                   Индексирование всех изменённых файлов 
+git commit -m "Оформление портфолио"                        Создание коммита с сообщением 
+git push                                                    Отправдение изменений в удаленный репозиторий
+
+
+ 
