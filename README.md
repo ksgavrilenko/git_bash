@@ -8,5 +8,5 @@ ___
 
 
 Также в рамках задания я создала портфолио в GitHub, используя базовые команды Git для работы с репозиторием:
--  [Создание портфолио в Githab с помощью базовых команд Git](https://github.com/ksgavrilenko/git_bash/commit/53e79506c9a402f0b56c98a23c97040254d9af9f)
+-  [Создание портфолио в Github с помощью базовых команд Git](https://github.com/ksgavrilenko/git_bash/commit/53e79506c9a402f0b56c98a23c97040254d9af9f)
 
